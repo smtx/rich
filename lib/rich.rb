@@ -37,7 +37,7 @@ module Rich
   @@allow_document_uploads = false
 
   mattr_accessor :allow_embeds
-  @@allow_embeds = false
+  @@allow_embeds = true
 
   mattr_accessor :allowed_image_types
   @@allowed_image_types = ['image/jpeg', 'image/png', 'image/gif', 'image/jpg']
@@ -74,7 +74,7 @@ module Rich
     :startupOutlineBlocks => true,
     :forcePasteAsPlainText => true,
     :format_tags => 'h3;p;pre',
-    :toolbar => [['Format','Styles'],['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','Table'],['Bold', 'Italic', '-','NumberedList', 'BulletedList', 'Blockquote', '-', 'richImage', 'richFile','MediaEmbed', '-', 'Link', 'Unlink'],['Source', 'ShowBlocks']],
+    :toolbar => [['Format','Styles'],['Bold', 'Italic', '-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','Table','NumberedList', 'BulletedList', 'Blockquote', '-', 'richImage', 'richFile','MediaEmbed', '-', 'Link', 'Unlink'],['Source', 'ShowBlocks']],
     :language => I18n.default_locale,
     :richBrowserUrl => '/rich/files/',
     :uiColor => '#f4f4f4'
