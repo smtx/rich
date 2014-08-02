@@ -66,7 +66,6 @@ module Rich
   mattr_accessor :editor
   @@editor = {
     :height => 400,
-    :stylesSet  =>  [],
     :extraPlugins => 'stylesheetparser,richfile,MediaEmbed,showblocks,table',
     :removePlugins => 'scayt,menubutton,image,forms',
     :contentsCss => :default,
